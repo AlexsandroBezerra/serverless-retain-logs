@@ -8,6 +8,13 @@
     "prepack": "npm run build",
     "prepublish": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexsandroBezerra/serverless-retain-logs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlexsandroBezerra/serverless-retain-logs/issues"
+  },
   "keywords": [
     "serverless",
     "logs"
