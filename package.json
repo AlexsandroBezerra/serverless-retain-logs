@@ -1,0 +1,25 @@
+{
+  "name": "@alexsandrobezerra/serverless-retain-logs",
+  "version": "1.0.0",
+  "description": "Serverless plugin to retainn all log groups when deleting lambdas.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepack": "npm run build",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "serverless",
+    "logs"
+  ],
+  "author": "Alexsandro Gomes Bezerra",
+  "license": "MIT",
+  "peerDependencies": {
+    "serverless": ">=2"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.2",
+    "@types/node": "^22.18.4",
+    "typescript": "^5.9.2"
+  }
+}
