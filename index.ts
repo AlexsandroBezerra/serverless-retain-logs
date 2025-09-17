@@ -5,6 +5,7 @@ export default class MyPlugin {
 	private readonly serverless: any; // TODO: improve type
 
 	constructor(serverless: any) { // TODO: improve type
+		this.serverless = serverless
 		this.hooks = {
 			'before:package:finalize': () => this.execute()
 		}
