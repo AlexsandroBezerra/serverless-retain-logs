@@ -1,6 +1,6 @@
 {
   "name": "@alexsandrobezerra/serverless-retain-logs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Serverless plugin to retainn all log groups when deleting lambdas.",
   "main": "index.js",
   "scripts": {

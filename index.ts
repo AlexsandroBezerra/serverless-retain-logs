@@ -19,15 +19,15 @@ export default class MyPlugin {
 
 		const resources: Array<Record<string, unknown>> = cfnTemplate.Resources
 
-		const newResources = resources.map(resource => {
+		const newResources = Object.entries(resources).map(([key, resource]) => {
 			if (resource.Type === "AWS::Logs::LogGroup") {
-				return { ...resource, DeletionPolicy: "Retain" }
+				return [key, { ...resource, DeletionPolicy: "Retain" }]
 			}
 
-			return resource
+			return [key, resource]
 		})
 
-		cfnTemplate.Resources = newResources
+		cfnTemplate.Resources = Object.fromEntries(newResources)
 	}
 }
 
